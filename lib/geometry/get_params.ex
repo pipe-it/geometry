@@ -3,7 +3,11 @@ defmodule Geometry.GetParams do
   import Geometry.Parameters
 
   def get_params do
-    choice = read_integer("Enter a number to choose:  ")
+    choice = read_integer("Enter a number to choose the polygon: ")
+
+    IO.puts("""
+    --------------------------------------------
+    """)
 
     cond do
       choice == 1 ->
@@ -12,7 +16,6 @@ defmodule Geometry.GetParams do
 
       choice == 2 ->
         triangle_area()
-
         try_again()
 
       choice == 3 ->
@@ -35,8 +38,11 @@ defmodule Geometry.GetParams do
   end
 
   def try_again do
+    IO.puts("")
+
     calculate =
-      IO.gets("Do you want to calculate more? enter y/n and press enter ") |> String.trim()
+      IO.gets("**--> Do you want to calculate more? <--** enter y/n and press enter: ")
+      |> String.trim()
 
     if calculate == "y" do
       get_params()
