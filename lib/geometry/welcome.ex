@@ -18,4 +18,5 @@ defmodule Geometry.Welcome do
 
     get_params()
   end
+ 
 end

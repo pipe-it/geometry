@@ -12,6 +12,7 @@ defmodule Geometry.GetParams do
 
       choice == 2 ->
         triangle_area()
+
         try_again()
 
       choice == 3 ->

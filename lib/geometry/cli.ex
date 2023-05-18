@@ -1,5 +1,5 @@
 defmodule Geometry.CLI do
   def main(_) do
-    Geometry.init()
+    Geometry.start_geometry()
   end
 end
