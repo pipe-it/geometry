@@ -1,5 +1,6 @@
 defmodule Geometry.Welcome do
   import Geometry.GetParams
+
   def init do
     IO.puts("""
 
@@ -18,5 +19,4 @@ defmodule Geometry.Welcome do
 
     get_params()
   end
- 
 end

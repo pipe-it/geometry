@@ -50,4 +50,8 @@ defmodule Geometry.GetParams do
       IO.puts("Ciao Ciao ..!")
     end
   end
+
+  defp try_againd() do
+    IO.gets("sadsad")
+  end
 end
